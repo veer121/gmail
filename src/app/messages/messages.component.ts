@@ -142,5 +142,11 @@ export class MessagesComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  // this is a variable
+  sectionInView = 'primary';
+  // this is a functino to change the view variable
+  changeSectionInView(dest) {
+    this.sectionInView = dest;
+  }
 
 }

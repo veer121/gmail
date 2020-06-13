@@ -3,65 +3,74 @@
         <div class="left">
             <span class="material-icons">
                 check_box_outline_blank
-                </span>
-                <span class="material-icons arrow">
-                    arrow_drop_down
-                    </span>
-                    <span class="material-icons refresh">
-                        refresh
-                        </span>
-                        <span class="material-icons more_vert">
-                            more_vert
-                            </span>
+            </span>
+            <span class="material-icons arrow">
+                arrow_drop_down
+            </span>
+            <span class="material-icons refresh">
+                refresh
+            </span>
+            <span class="material-icons more_vert">
+                more_vert
+            </span>
         </div>
-       <div class="right">
-        <span class="t-text">1-50 of 1,999</span>
-        <span class="material-icons left-arrow">
-            keyboard_arrow_left
+        <div class="right">
+            <span class="t-text">1-50 of 1,999</span>
+            <span class="material-icons left-arrow">
+                keyboard_arrow_left
             </span>
             <span class="material-icons right-arrow">
                 keyboard_arrow_right
-                </span>
+            </span>
 
-       </div>
+        </div>
 
     </div>
     <hr class="hr">
     <div class="middle">
-        <div class="div1">
+        <!-- here i have added a (click) event listner -->
+        <div class="div1" (click)="changeSectionInView('primary')">
             <span class="material-icons primary">
                 inbox
-                </span>
+            </span>
             <span class="primary text">Primary</span>
         </div>
-        <div>
+        <!-- here i have added a (click) event listner -->
+        <div (click)="changeSectionInView('social')">
             <span class="material-icons social">
                 people
-                </span>
-                <span class="social text">Social</span>
+            </span>
+            <span class="social text">Social</span>
         </div>
         <div>
             <span class="material-icons promotions">
                 local_offer
-                </span>
-                <span class="promotions text">Promotions</span>
+            </span>
+            <span class="promotions text">Promotions</span>
         </div>
     </div>
     <hr class="hr">
-    <div class="messages">
+
+    <!-- This is section of primary [ forcus on the *ngIf ]-->
+    <div class="messages" *ngIf="sectionInView=='primary'">
         <div *ngFor="let mail of mails">
-            <div>   
+            <div>
                 <span class="material-icons box">
                     check_box_outline_blank
-                    </span>
-                    <span class="material-icons star">
-                        star_border
-                        </span>
-                        <span class="text-name">{{mail.name}}</span>
-                        <span class="text-mail">{{mail.email | slice:0:120}}<span>...</span></span>
-                        <span class="text-date">{{mail.date}}</span>
+                </span>
+                <span class="material-icons star">
+                    star_border
+                </span>
+                <span class="text-name">{{mail.name}}</span>
+                <span class="text-mail">{{mail.email | slice:0:120}}<span>...</span></span>
+                <span class="text-date">{{mail.date}}</span>
             </div>
 
         </div>
     </div>
+    <!-- This is section of social  [ forcus on the *ngIf ]-->
+    <div class="messages" *ngIf="sectionInView=='social'">
+        <h2>SOCIAL</h2>
+    </div>
+
 </div>
