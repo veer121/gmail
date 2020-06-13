@@ -1,0 +1,325 @@
+.main{
+    display:flex;
+    flex-direction:column;
+}
+.compose{
+    position: relative;
+    left:10px;
+    margin:5px 5px 5px 0;
+    border:none;
+    border-radius:40px;
+    display:flex;
+    align-items: center;
+    background-color: white;
+    box-shadow:1px 1px 3px 1px 	#D3D3D3	;
+    padding:8px 25px 8px 15px;
+}
+.compose:hover{
+    background-color: #F8F8F8;
+    box-shadow: 1px 3px 5px 3px #D3D3D3 ;
+}
+.compose > a{
+   display:relative;
+   font-size: 0.9rem;
+   text-decoration: none;
+   font-family:arial;
+   color:black;
+   padding-left: 10px;
+   font-weight:500;
+}
+.compose > img{
+    height:30px;
+}
+.inbox{
+    margin-top: 10px;
+    margin-left:-30px;
+    padding-left:35px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(253, 232, 227);
+    border: none;
+    position: relative;
+    left:20px;
+}
+.inbox:hover{
+    background-color:#F0F0F0 ;
+}
+.inbox > .material-icons{
+    color:	#cf3217;
+    padding:5px 15px 5px 0;
+}
+.inbox > .iinbox{
+    font-weight: 700;
+    font-size: 0.9rem;
+    color:#cf3217;
+}
+.inbox > .itext{
+    padding-left:90px;
+    padding-right: 5px;
+    color:	#cf3217;
+}
+.starred{
+    margin-left:-30px;
+    padding-left:35px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: none;
+    position: relative;
+    left:20px;
+}
+.starred:hover{
+    background-color:#F0F0F0 ;
+    color:#606060;
+}
+.starred > .material-icons{
+    color:	#606060;
+    padding:0 15px 5px 0;
+}
+.starred > .stext{
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding-right:115px;
+    margin-left:-2px;
+}
+.snoozed{
+    margin-left:-30px;
+    padding-left:35px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: none;
+    position: relative;
+    left:20px;
+}
+.snoozed > .sntext{
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding-right:105px;
+    margin-left:-2px;
+}
+.snoozed > .material-icons{
+    color:	#606060;
+    padding:0 15px 5px 0;
+}
+.snoozed:hover{
+    background-color:#F0F0F0 ;
+    color:#606060;
+}
+.send{
+    margin-left:-30px;
+    padding-left:35px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: none;
+    position: relative;
+    left:20px;
+}
+.send > .sstext{
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding-right:130px;
+    margin-left:-2px;
+}
+.send > .material-icons{
+    color:	#606060;
+    padding:0 15px 5px 0;
+}
+.send:hover{
+    background-color:#F0F0F0 ;
+    color:#606060;
+}
+.draft{
+    margin-left:-30px;
+    padding-left:35px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: none;
+    position: relative;
+    left:20px;
+}
+.draft > .dtext{
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding-right:125px;
+    margin-left:-2px;
+}
+.draft > .material-icons{
+    color:	#606060;
+    padding:0 15px 5px 0;
+}
+.draft:hover{
+    background-color:#F0F0F0 ;
+    color:#606060;
+}
+.more{
+    margin-bottom: -5px;
+    margin-left:-30px;
+    padding-left:35px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: none;
+    position: relative;
+    left:20px;
+}
+.more > .mtext{
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding-right:130px;
+    margin-left:-2px;
+}
+.more > .material-icons{
+    color:	#606060;
+    padding:0 15px 5px 0;
+}
+.more:hover{
+    background-color:#F0F0F0 ;
+    color:#606060;
+}
+.hr{
+    border:0.5px solid #eeeeee;
+}
+.main2{
+    display:flex;
+    flex-direction: column;
+}
+.meet{
+    padding:5px 5px 5px 30px;
+    font-family:arial;
+    font-size: 0.9rem;
+}
+.meeting{
+    margin-left:-30px;
+    padding-left:35px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: none;
+    position: relative;
+    left:20px;
+}
+.meeting > .metext{
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding-right:65px;
+    margin-left:-2px;
+}
+.meeting > .material-icons{
+    color:	#606060;
+    padding:0 15px 5px 0;
+}
+.meeting:hover{
+    background-color:#F0F0F0 ;
+    color:#606060;
+}
+.join{
+    margin-bottom: -5px;
+    margin-left:-30px;
+    padding-left:35px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: none;
+    position: relative;
+    left:20px;
+}
+.join > .jtext{
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding-right:65px;
+    margin-left:-2px;
+}
+.join > .material-icons{
+    color:	#606060;
+    padding:0 15px 5px 0;
+}
+.join:hover{
+    background-color:#F0F0F0 ;
+    color:#606060;
+}
+.main3{
+    display:flex;
+    flex-direction: column;
+}
+.chat{
+    padding:10px 5px 5px 30px;
+    font-family:arial;
+    font-size: 0.9rem;
+}
+.specs{
+    display:flex;
+    align-items: center;
+    position:relative;
+    left:20px;
+    padding-bottom:10px;
+}
+.specs > img{
+    height:30px;
+}
+.specs > .name{
+    font-size: 0.8rem;
+    font-family: arial;
+    padding-left:5px ;
+}
+.specs > .drop{
+    font-size:1rem ;
+    color:#D3D3D3;
+}
+.specs > .add{
+    padding-left:80px;
+    color:	#B8B8B8;
+}
+.main4{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;;
+}
+.main4 > .material-icons{
+    font-size:7.5rem;
+    color:#E8E8E8;
+}
+.main4 > .text{
+    font-family: arial;
+    font-size:0.9rem;
+    color:	#606060;
+}
+.main4 > a{
+    font-family:arial;
+    font-size:0.9rem;
+    text-decoration: none;
+    color:#0000CD;
+    padding-top:5px;
+}
+.main5{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.main5 > .person{
+    color:	#606060;
+}
+.main5 > .quote{
+    background-color: #DCDCDC;
+    margin-left:10px;
+}

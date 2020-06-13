@@ -1,0 +1,20 @@
+.main{
+    display:flex;
+    flex-direction: column;
+}
+.area{
+    display:flex;   
+}
+.area > div{
+    flex:1
+}
+.area > .messages{
+    flex:10;
+    border-right:0.5px solid #eeeeee;
+}
+.area > .compose{
+    flex:2;
+}
+.area > .items{
+    flex:0.5;
+}

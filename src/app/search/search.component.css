@@ -1,0 +1,74 @@
+.search-main{
+    overflow: hidden;
+    display:flex;
+    flex:1; 
+    margin:8px 10px -3px 20px;
+}   
+.icons{
+display:flex;
+align-items: center;
+}
+.icons > span{
+    padding-right:12px;
+}
+.icons .menu{
+    font-size:1.5rem;
+    color:#606060;
+}
+.icons > span > img{
+    height:40px;
+}
+.icons .gmail{
+    font-size:1.3rem;
+    color:#606060;
+    font-family: Arial;
+}
+.search-bar{
+    position:relative;
+    left:4.5%;
+
+}
+.search-bar > input{
+    height:45px;
+    width:635px;
+    border: none ;
+    background-color:#eeeeee; 
+    border-radius:7px; 
+}
+input[type=text]{
+    padding:3px 20px 0 55px;
+    color:#606060;
+    font-size:1rem;
+}
+.search-bar > button{
+    position:absolute;
+    left:10px;
+    top:11px;
+    height:30px;
+    background-color:inherit;
+    border:none;
+    color:#606060;
+}
+.search-bar >button >.arrow {
+    position:absolute;
+    left:660px;
+    bottom:5px;
+}
+.right-icons{
+    display:flex;
+    align-items: center;
+position:relative;
+left:460px;
+}
+.right-icons > span{
+    padding-right:20px;
+    color:#606060;
+}
+.right-icons> .account{
+    color:green;
+    font-size:2.5rem;
+    
+}
+.hr{
+    border:0.5px solid #eeeeee;
+}

@@ -1,0 +1,31 @@
+.main{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding-top:10px;
+    overflow:hidden;
+}
+.main > img{
+width:20px;
+height:20px;
+padding-bottom:32px;
+}
+.hr1{
+    border:0.5px solid #eeeeee;
+    margin:0 20px 0 20px;
+}
+.main2{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    overflow:hidden;
+}
+.main2 > .add{
+    padding-top:30px;
+    color:	#808080;
+}
+.main2 > .arrow{
+    padding-top:425px;
+    font-size: 1.2rem;
+    color:	#808080;
+}
