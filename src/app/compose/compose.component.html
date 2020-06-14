@@ -1,65 +1,130 @@
 <div class="main">
-   <div >
-       <button class="compose">
-        <img src="https://img.icons8.com/color/48/000000/google-logo.png"/>  
-        <a href="">Compose</a>
-       </button>
-
-</div>
-   <div>
-       <button  class="inbox">
-        <span class="material-icons">
-            inbox
-            </span>
-          <span class="iinbox">Inbox </span>
-           <span class="itext">1687</span>
-       </button>
-
+    <div >
+        <button class="compose">
+         <img src="https://img.icons8.com/color/48/000000/google-logo.png"/>  
+         <a href="">Compose</a>
+        </button>
+ 
+ </div>
+    <div>
+        <button  class="inbox">
+         <span class="material-icons">
+             inbox
+             </span>
+           <span class="iinbox">Inbox </span>
+            <span class="itext">1687</span>
+        </button>
+ 
+     </div>
+    <div>
+        <button class="starred">
+         <span class="material-icons">
+             grade
+             </span>
+             <span class="stext">Starred</span>
+        </button>
+ 
+ </div>
+    <div>
+     <button class="snoozed"> 
+         <span class="material-icons">
+             watch_later
+             </span>
+         <span class="sntext"> Snoozed</span>
+     </button>   
+     </div>
+    <div>
+        <button class="send">
+         <span class="material-icons">
+             send
+             </span>
+         <span class="sstext">Sent</span>
+        </button>
+       
+     </div>
+ 
+    <div>
+     <button class="draft">
+         <span class="material-icons">
+             insert_drive_file
+             </span>
+         <span class="dtext">Drafts</span>
+     </button>
     </div>
-   <div>
-       <button class="starred">
-        <span class="material-icons">
-            grade
-            </span>
-            <span class="stext">Starred</span>
-       </button>
-
-</div>
-   <div>
-    <button class="snoozed"> 
-        <span class="material-icons">
-            watch_later
-            </span>
-        <span class="sntext"> Snoozed</span>
-    </button>   
+    <div>
+     <button class="more" (click)="changePartView('less')" *ngIf="partView=='more'">
+         <span class="material-icons">
+             expand_more
+             </span>
+         <span class="mtext">More</span>
+     </button>
     </div>
-   <div>
-       <button class="send">
+ </div>
+ <div>
+    <button class="more" (click)="changePartView('more')" *ngIf="partView=='less'">
         <span class="material-icons">
-            send
+            keyboard_arrow_up
             </span>
-        <span class="sstext">Sent</span>
-       </button>
-      
-    </div>
-
-   <div>
-    <button class="draft">
-        <span class="material-icons">
-            insert_drive_file
-            </span>
-        <span class="dtext">Drafts</span>
+        <span class="mtext">Less</span>
     </button>
    </div>
    <div>
-    <button class="more">
+    <button class="more" (click)="changePartView('more')" *ngIf="partView=='less'">
         <span class="material-icons">
-            expand_more
+            keyboard_arrow_up
             </span>
-        <span class="mtext">More</span>
+        <span class="mtext">Less</span>
     </button>
    </div>
-</div>
+   <div>
+    <button class="more" (click)="changePartView('more')" *ngIf="partView=='less'">
+        <span class="material-icons">
+            keyboard_arrow_up
+            </span>
+        <span class="mtext">Less</span>
+    </button>
+   </div>
+   <div>
+    <button class="more" (click)="changePartView('more')" *ngIf="partView=='less'">
+        <span class="material-icons">
+            keyboard_arrow_up
+            </span>
+        <span class="mtext">Less</span>
+    </button>
+   </div>
+   <div>
+    <button class="more" (click)="changePartView('more')" *ngIf="partView=='less'">
+        <span class="material-icons">
+            keyboard_arrow_up
+            </span>
+        <span class="mtext">Less</span>
+    </button>
+   </div>
+   <div>
+    <button class="more" (click)="changePartView('more')" *ngIf="partView=='less'">
+        <span class="material-icons">
+            keyboard_arrow_up
+            </span>
+        <span class="mtext">Less</span>
+    </button>
+   </div>
+   <div>
+    <button class="more" (click)="changePartView('more')" *ngIf="partView=='less'">
+        <span class="material-icons">
+            keyboard_arrow_up
+            </span>
+        <span class="mtext">Less</span>
+    </button>
+   </div>
+   <div>
+    <button class="more" (click)="changePartView('more')" *ngIf="partView=='less'">
+        <span class="material-icons">
+            keyboard_arrow_up
+            </span>
+        <span class="mtext">Less</span>
+    </button>
+   </div>
+
 <hr class="hr">
 <div class="main2">
     <div class="meet">Meet</div>
@@ -91,9 +156,24 @@
         <span class="material-icons drop">
             arrow_drop_down
             </span>
-            <span class="material-icons add">
+            <span class="material-icons add" (click)="changeView('add')">
                 add
                 </span>
+
+    </div>
+    <div class="new-chat" *ngIf="view=='add'">
+        <input type="text" placeholder="Enter name, email, or phone" autofocus="">
+        <span class="material-icons search">
+            search
+            </span>
+            <span class="new-group">New Group</span>
+            <span class="material-icons group-add">
+                group_add
+                </span>
+                <span class="material-icons person">
+                    person
+                    </span>
+                    <span class="find">Find someone on Hangouts by typing their name and email address</span>
     </div>
 </div>
 <hr class="hr">

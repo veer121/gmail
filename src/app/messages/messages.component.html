@@ -42,7 +42,8 @@
             </span>
             <span class="social text">Social</span>
         </div>
-        <div>
+         <!-- here i have added a (click) event listner -->
+        <div (click)="changeSectionInView('promotions')">
             <span class="material-icons promotions">
                 local_offer
             </span>
@@ -70,7 +71,37 @@
     </div>
     <!-- This is section of social  [ forcus on the *ngIf ]-->
     <div class="messages" *ngIf="sectionInView=='social'">
-        <h2>SOCIAL</h2>
+        <div *ngFor="let mail of mails">
+            <div>
+                <span class="material-icons box">
+                    check_box_outline_blank
+                </span>
+                <span class="material-icons star">
+                    star_border
+                </span>
+                <span class="text-name">{{mail.name2}}</span>
+                <span class="text-mail">{{mail.email | slice:0:120}}<span>...</span></span>
+                <span class="text-date">{{mail.date}}</span>
+            </div>
+
+        </div>
+    </div>
+     <!-- This is section of social  [ forcus on the *ngIf ]-->
+    <div class="messages" *ngIf="sectionInView=='promotions'">
+        <div *ngFor="let mail of mails">
+            <div>
+                <span class="material-icons box">
+                    check_box_outline_blank
+                </span>
+                <span class="material-icons star">
+                    star_border
+                </span>
+                <span class="text-name">{{mail.name2}}</span>
+                <span class="text-mail">{{mail.email | slice:0:120}}<span>...</span></span>
+                <span class="text-date">{{mail.date}}</span>
+            </div>
+
+        </div>
     </div>
 
 </div>
