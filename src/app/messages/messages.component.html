@@ -29,14 +29,16 @@
     <hr class="hr">
     <div class="middle">
         <!-- here i have added a (click) event listner -->
-        <div class="div1" (click)="changeSectionInView('primary')">
+        <!-- here i have removed class="div" and added ngClass -->
+        <div  [ngClass]="{'div1':sectionInView==='primary'}" (click)="changeSectionInView('primary')">
             <span class="material-icons primary">
                 inbox
             </span>
             <span class="primary text">Primary</span>
         </div>
         <!-- here i have added a (click) event listner -->
-        <div (click)="changeSectionInView('social')">
+        <!-- here i have added a ngClass -->
+        <div [ngClass]="{'div1':sectionInView==='social'}" (click)="changeSectionInView('social')">
             <span class="material-icons social">
                 people
             </span>
